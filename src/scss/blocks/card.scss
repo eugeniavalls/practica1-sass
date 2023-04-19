@@ -1,0 +1,79 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+
+    &__image{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    &__info{
+        padding: 24px;
+    }
+
+    &__info--claim{
+        margin-bottom: 12px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 5px;
+        color: #6C7289;
+    }
+
+    &__info--title{
+        font-family: 'Fraunces', serif;
+        font-size: 32px;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    &__info--text{
+        color: #6C7289;
+        font-size: 15px;
+        line-height: 23px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+
+    &__price{
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        margin-bottom: 20px;
+    }
+
+    &__price--big{
+        font-size: 32px;
+        font-weight: 700;
+        font-family: 'Fraunces', serif;
+        margin: 0;
+        color: #3D8168;
+    }
+
+    &__price--small{
+        font-size: 13px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #6C7289;
+        text-decoration: line-through;
+    }
+
+    &__cart{
+        background-color: #3D8168;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    &__cart--text{
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+}
