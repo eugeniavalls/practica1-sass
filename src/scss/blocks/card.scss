@@ -1,16 +1,41 @@
+@use '../mixins/responsive.scss' as *;
+
 .card{
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     background-color: white;
+    max-width: 1440px;
+
+    @include responsive(desktop){
+        flex-direction: row;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__image-container{
+        @include responsive(desktop){
+            width: 50%;
+        }
+    }
 
     &__image{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-top-left-radius: var(--border-radius);
+        border-top-right-radius: var(--border-radius);
+
+        @include responsive (desktop){
+        border-top-right-radius: 0;
+        border-bottom-left-radius: var(--border-radius);
+        }
     }
 
     &__info{
         padding: 24px;
+
+        @include responsive(desktop){
+            width: 50%;
+        }
     }
 
     &__info--claim{
@@ -68,6 +93,12 @@
         align-items: center;
         justify-content: center;
         gap: 12px;
+
+        @include responsive (desktop){
+            &:hover{
+                background-color: #1A4032;
+            }
+        }
     }
 
     &__cart--text{
