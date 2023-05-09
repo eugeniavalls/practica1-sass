@@ -1,8 +1,13 @@
 /* ESTILOS DEL MAIN */
 
-.main{
-    background-color: #F2EAE2;
-    padding: 175px;
-    font-family: 'Fraunces', serif;
-    font-family: 'Montserrat', sans-serif;
+@use "../mixins/responsive.scss" as *;
+
+.main {
+  background-color: #f2eae2;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+
+  @include responsive(desktop) {
+    padding: 175px 0;
+  }
 }

@@ -1,110 +1,110 @@
-@use '../mixins/responsive.scss' as *;
+@use "../mixins/responsive.scss" as *;
 
-.card{
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  background-color: white;
+  max-width: 1440px;
+
+  @include responsive(desktop) {
+    flex-direction: row;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__image-container {
+    @include responsive(desktop) {
+      width: 50%;
+    }
+  }
+
+  &__image {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+
+    @include responsive(desktop) {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: var(--border-radius);
+    }
+  }
+
+  &__info {
+    padding: 24px;
+
+    @include responsive(desktop) {
+      width: 50%;
+    }
+  }
+
+  &__claim {
+    margin-bottom: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #6c7289;
+  }
+
+  &__title {
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0;
+  }
+
+  &__text {
+    color: #6c7289;
+    font-size: 15px;
+    line-height: 23px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  &__price {
     display: flex;
-    flex-direction: column;
-    border-radius: var(--border-radius);
-    background-color: white;
-    max-width: 1440px;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 20px;
+  }
 
-    @include responsive(desktop){
-        flex-direction: row;
-        width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+  &__price--big {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+    margin: 0;
+    color: #3d8168;
+  }
+
+  &__price--small {
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #6c7289;
+    text-decoration: line-through;
+  }
+
+  &__cart {
+    background-color: #3d8168;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    @include responsive(desktop) {
+      &:hover {
+        background-color: #1a4032;
+      }
     }
+  }
 
-    &__image-container{
-        @include responsive(desktop){
-            width: 50%;
-        }
-    }
-
-    &__image{
-        border-top-left-radius: var(--border-radius);
-        border-top-right-radius: var(--border-radius);
-
-        @include responsive (desktop){
-        border-top-right-radius: 0;
-        border-bottom-left-radius: var(--border-radius);
-        }
-    }
-
-    &__info{
-        padding: 24px;
-
-        @include responsive(desktop){
-            width: 50%;
-        }
-    }
-
-    &__info--claim{
-        margin-bottom: 12px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size: 12px;
-        letter-spacing: 5px;
-        color: #6C7289;
-    }
-
-    &__info--title{
-        font-family: 'Fraunces', serif;
-        font-size: 32px;
-        line-height: 32px;
-        margin: 0;
-    }
-
-    &__info--text{
-        color: #6C7289;
-        font-size: 15px;
-        line-height: 23px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        margin-bottom: 24px;
-    }
-
-    &__price{
-        display: flex;
-        align-items: center;
-        gap: 19px;
-        margin-bottom: 20px;
-    }
-
-    &__price--big{
-        font-size: 32px;
-        font-weight: 700;
-        font-family: 'Fraunces', serif;
-        margin: 0;
-        color: #3D8168;
-    }
-
-    &__price--small{
-        font-size: 13px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        color: #6C7289;
-        text-decoration: line-through;
-    }
-
-    &__cart{
-        background-color: #3D8168;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-
-        @include responsive (desktop){
-            &:hover{
-                background-color: #1A4032;
-            }
-        }
-    }
-
-    &__cart--text{
-        font-size: 14px;
-        font-weight: 700;
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-    }
+  &__button-text {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
 }
