@@ -8,7 +8,9 @@
 
 ## Descripción 📑
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+Ejercicio para poner en práctica la metodología BEM y el lenguaje SASS.
+Utilización de display y position.
+Realización de la práctica en responsive para ordenador y móvil realizando hover en la parte de ordenador.
 
 ## Tecnologías 🛠
 
@@ -19,6 +21,9 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, 
 [![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://es.wikipedia.org/wiki/JavaScript)
 <a href="https://getbem.com/">
 <img src="http://jennyknuth.com/wp-content/uploads/2018/03/BEM-1.png" target="_blank" rel="noreferrer" width="40" height="40" alt="BEM metodology">
+<a href="https://sass-lang.com/">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png" target="_blank" rel="noreferrer" width="40" alt="BEM metodology">
+</a>
 </a>
 
 ## Vista previa del proyecto
@@ -31,10 +36,10 @@ Si quieres echar un vistazo al proyecto, te recomiendo:
 
 ## Autor ✒️
 
-**TU NOMBRE**
+**EUGENIA VALLS ALFARO**
 
-- [micorreo@midominio.com](micorreo@midominio.com)
-- [LinkedIn](https://www.linkedin.com/in/tu-url-de-linkedin/)
+- [Correo electrónico](e.vallsalfaro@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/eugenia-valls-alfaro-540b1a20a)
 - [Porfolio web](https://tu-dominio.com/)
 
 ## Instalación
